@@ -1,7 +1,4 @@
 <h1>Algorithm for file updates in Python</h1>
-<h1>Summary</h1>
-<p>For this task, I created a Python algorithm that takes in a file of IP addresses and uses a list of IP addresses to remove to update the file. Using Python functionalities like with open, .read(), and .remove() I convert the file to a Python list and iterate through the list of IP addresses to remove and compare them to the IP addresses currently listed in the file. After removing the invalid IP addresses, I convert the list back to a string to then update the valid IP addresses file with the new list. 
-</p>
 
 <h2>Project description</h2>
 
@@ -34,4 +31,5 @@
 </p>
  <img src="https://i.imgur.com/8QDYY5I.png" width="60%" height="60%">
  <img src="https://i.imgur.com/BpTkzZB.png" width="50%" height="50%">
-
+<h2>Summary</h2>
+<p>For this task, I created an algorithm that removes IP addresses identified in a <q>remove_list</q> variable from the <q>allow_list.txt</q> file of approved IP addresses. This algorithm involved opening the file, converting it to a string to be read, and then converting this string to a list stored in the variable <code>ip_addresses</code>. I then iterated through the IP addresses in <q>remove_list</q>. With each iteration, I checked if the element was part of the <q>ip_addresses</q> list. If so, I applied the <code>.remove()</code> method to it to remove the element from <q>ip_addresses</q>. After this, I used the <code>.join()</code> method to convert the <q>ip_addresses</q> back into a string so that I could write over the contents of the <q>allow_list.txt</q> file with the revised list of IP addresses. Finally, I printed the file output using <code>print()</code></p>
