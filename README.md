@@ -8,7 +8,7 @@
 <h2>Open and read the file that contains the allow list</h2>
 <p>I first start by storing the <q>allow_list.txt</q> file to a variable that I can use to open it. Then, I'll define the list of IP addresses that are due to be removed from the "allow list".</p>
 <p>Then, using the <code>with</code> and <code>open()</code> function, I open the file to read the currently allowed IP addresses listed in the file. The <q>r</q> indicates what I want to do with the file. In this example, I want to read it.</p>
-<p>With the file open, I can now read the contents with the <code>.read()</code> method, which converts the contents of the file into a python string.</p>
+<p>With the file open, I can now read the contents with the <code>.read()</code> method, which converts the contents of the file into a Python string.</p>
  <img src="https://i.imgur.com/mKzEswr.png" width="50%" height="50%">
 
 <h2>Convert the string into a list</h2>
@@ -17,7 +17,7 @@
 
  
 <h2>Iterate through the remove list</h2>
-<p>Now that all of the allowed IP addresses are easily available in a list, I will iterate through all of the IP addresses I need to remove so that I can check if they exist in the currently allowed IP addresses. 
+<p>Now that all of the allowed IP addresses are easily available in a list, I will iterate through all the IP addresses I need to remove to check if they exist in the currently allowed IP addresses. 
 </p>
 <img src="https://i.imgur.com/3ySqen5.png" width="30%" height="30%">
  
@@ -27,7 +27,7 @@
 <img src="https://i.imgur.com/9n1lxc8.png" width="50%" height="50%">
  
 <h2>Update the file with the revised list of IP addresses</h2>
-<p>Now that I have the updated list of IP addresses, I need to update the allow_list.txt file with the updated list. I will first convert the Python list back to a string where each IP address is on its own line. Then I will open the allow_list.txt file with the <q>w</q> parameter to completely overwrite the file to avoid duplicate information. Finally, I will wirte the updated string of allowed IP addresses to the file. 
+<p>Now that I have the updated list of IP addresses, I need to update the allow_list.txt file with the updated list. I will first convert the Python list to a string where each IP address is on its own line. Then, I will open the allow_list.txt file with the <q>w</q> parameter to overwrite the file and avoid duplicate information. Finally, I will write the updated string of allowed IP addresses into the file. 
 </p>
  <img src="https://i.imgur.com/8QDYY5I.png" width="60%" height="60%">
  <img src="https://i.imgur.com/BpTkzZB.png" width="50%" height="50%">
